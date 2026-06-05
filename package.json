@@ -1,0 +1,11 @@
+{
+  "name": "fctv33-stream-resolver",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node -e \"process.exit(0)\"",
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stream Resolver</title>
+  </head>
+  <body>
+    <div id="app" class="shell">
+      <header class="header">
+        <h1>Stream Resolver</h1>
+      </header>
+      <section class="controls">
+        <label class="field" for="pageUrl">
+          <span>Match page URL</span>
+          <input
+            id="pageUrl"
+            type="url"
+            spellcheck="false"
+            placeholder="https://…/match-page.html"
+          />
+        </label>
+        <button id="resolveBtn" class="btn btn-primary" type="button">Resolve</button>
+      </section>
+      <section class="results" id="results" hidden>
+        <div class="player-wrap">
+          <video id="player" controls playsinline></video>
+        </div>
+        <label class="field" for="playableUrl">
+          <div class="field-head">
+            <span>Playable link</span>
+            <button class="btn" type="button" data-copy="playableUrl">Copy</button>
+          </div>
+          <textarea id="playableUrl" readonly spellcheck="false" rows="3"></textarea>
+        </label>
+      </section>
+      <footer id="status" class="footer">Ready</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.20/dist/hls.min.js"></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
