@@ -1,4 +1,4 @@
-import { buildCtuUrl, hasCtuParams } from "./crypto/ctu.js";
+import { buildCtuUrl, hasCtuParams } from "../crypto/ctu.js";
 
 const CORS = {
   "Cache-Control": "no-store, no-cache, must-revalidate",

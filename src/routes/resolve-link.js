@@ -1,8 +1,8 @@
-import { FctvClient } from "./fctv/client.js";
-import { parseMatchUrl } from "./fctv/url.js";
-import { buildTokenUrl } from "./crypto/token.js";
-import { SITE_TYPE } from "./config.js";
-import { proxyPath } from "./hls.js";
+import { FctvClient } from "../fctv/client.js";
+import { SITE_TYPE } from "../fctv/config.js";
+import { parseMatchUrl } from "../fctv/url.js";
+import { buildTokenUrl } from "../crypto/token.js";
+import { proxyPath } from "./hls-proxy.js";
 
 export async function resolveResponse(pageUrl, origin) {
   if (!pageUrl) return Response.json({ error: "url required" }, { status: 400 });

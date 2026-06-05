@@ -8,7 +8,7 @@ import {
   SIGN_PATH,
   SITE_ORIGIN,
   SITE_TYPE,
-} from "../config.js";
+} from "./config.js";
 import {
   decodeEnvelope,
   decodeKvEntries,

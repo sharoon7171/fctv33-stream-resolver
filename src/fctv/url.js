@@ -1,4 +1,4 @@
-import { SPORTS } from "../config.js";
+import { SPORTS } from "./config.js";
 
 const LOCALES = new Set(["en", "zh", "th", "vi", "id", "pt", "es", "tr", "ru", "ko", "ja"]);
 

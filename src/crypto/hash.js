@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { PARAM_ORDER } from "../config.js";
+import { PARAM_ORDER } from "../fctv/config.js";
 
 const NUMERIC = new Set(["sportType", "language", "leagueId", "seasonId", "siteType"]);
 
